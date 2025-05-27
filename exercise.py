@@ -4,7 +4,6 @@ def calculateBMR(age, height, weight, gender):
     elif(gender == "female"):
         bmr = 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age)
 
-
     return bmr
 
 def calculateBMI(height, weight):
@@ -67,7 +66,6 @@ def display(name, Tdee, BMI, Goal, goalChoice, exerciseRecommendation):
     print(f"\n Recommended Exercises for {name}:")
     for exercise in exerciseRecommendation:
         print(f"- {exercise}")
-
 
 def main():
     name = input("Enter your name: ")
